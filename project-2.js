@@ -216,7 +216,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const name = localStorage.getItem("snapPlayerName") || "Player";
-  const scoreStr= localStorage.getItem("snapPlayerScore") || "";
+  const scoreStr= localStorage.getItem("snapPlayerScore") || "0";
   const score = parseInt(scoreStr);
 
   // Display values
