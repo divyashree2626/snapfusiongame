@@ -1,0 +1,31 @@
+<!-- scorecard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snap Fusion - scorecard</title>
+  <link rel="stylesheet" href="project-2.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Logo">
+    </div>
+    <div class="music-control">
+      <button id="musicToggle" title="Toggle Music">🔊</button>
+    </div>
+  </header>
+
+  <audio id="myAudio" src="onrepeat.mp3" autoplay loop></audio>
+
+  <div class="glass">
+    <h1>Well Done, <span id="playerName">Player</span>!</h1>
+    <div class="score">Your Score: <span id="finalScore">0</span>/30</div>
+    <div class="feedback" id="scoreFeedback">Feedback goes here</div>
+    <button onclick="quitGame()">🚪 Quit</button>
+  </div>
+
+  <script src="project-2.js"></script>
+</body>
+</html>

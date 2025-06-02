@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="project-2.css" />
+  <title>Snap Fusion</title>
+  <link rel="icon" href="logo.jpg">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Logo">
+    </div>
+   <div class="music-control">
+    <button id="musicToggle" title="Toggle Music">🔊</button>
+  </div>
+  </header>
+  <audio id="myAudio" src="onrepeat.mp3"></audio>
+  <div class="form-container">
+    <form class="glass-form">
+      <h2>Welcome To Snap Fusion</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label for="number">Age</label>
+      <input type="number" id="age" placeholder="Enter your number" required>
+    <button type="submit" onclick="saveAndGo(event)">Let's rock</button>
+    </form>
+  </div>
+
+  <script src="project-2.js"></script>
+</body>
+</html>

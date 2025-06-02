@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snap Fusion Game</title>
+  <link rel="stylesheet" href="project-2.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Logo">
+    </div>
+   <div class="music-control">
+    <button id="musicToggle" title="Toggle Music">🔊</button>
+  </div>
+  </header>
+  <audio id="myAudio" src="onrepeat.mp3"></audio>
+    <h2 id="playerGreeting" class="player-name">Hi, Player!</h2>
+
+  <div class="top-bar">
+  
+  <div class="timer-section">
+    <span id="timer">⏱️ Timer: 30</span>
+    <button id="toggleTimer" title="Toggle timer">⏱️</button>
+  </div>
+  
+  <div class="question-number" id="questionNumber">Question: 1</div>
+  
+  <div class="score" id="score">Score: 0</div>
+</div>
+
+  <div class="game-container glassmorphism">
+    <!-- Greeting -->
+  
+    <!-- Image Pair -->
+    <div class="image-pair">
+      <img id="img1" src="" alt="Image 1" />
+      <img id="img2" src="" alt="Image 2" />
+    </div>
+
+    <!-- Answer Input -->
+    <div class="answer-section">
+      <input type="text" id="answer" placeholder="Type your answer..." autocomplete="off"/>
+      <div id="feedback"></div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="buttons">
+      <button id="nextBtn">Next</button>
+      <button id="submitBtn" onclick="window.location.href='scorecard.html'">Submit</button>
+    </div>
+
+  
+  </div>
+
+  <!-- JavaScript -->
+  <script src="project-2.js"></script>
+</body>
+</html>
